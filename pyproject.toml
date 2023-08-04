@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "kr-3-potemkin-da"
+version = "0"
+description = "This is my Course work"
+authors = ["Potemkin Dmitry"]
+license = "None"
+readme = "README.md"
+packages = [{include = "kr_3_potemkin_da"}]
+
+[tool.poetry.dependencies]
+python = "^3.10.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+coverage = "^7.2.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
