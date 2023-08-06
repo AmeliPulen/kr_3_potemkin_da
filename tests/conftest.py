@@ -1,6 +1,7 @@
 import pytest
 
 
+# Фиксируем данные для теста функции
 @pytest.fixture
 def valid_data():
     return [{
@@ -110,6 +111,7 @@ def valid_data():
     ]
 
 
+# фиксируем данные одной EXCEUTED операции
 @pytest.fixture
 def one_executed_operation():
     return [{
@@ -145,6 +147,7 @@ def one_executed_operation():
     ]
 
 
+# Фиксируем данные для проверки самой новой операции
 @pytest.fixture
 def newer_operation():
     return [{
@@ -178,20 +181,22 @@ def newer_operation():
             "to": "Счет 11776614605963066702"
         }]
 
+
+# Фиксируем данные для проверки вывода данных одной операции
 @pytest.fixture()
 def one_operation():
     return {
-    "id": 736942989,
-    "state": "EXECUTED",
-    "date": "2019-09-06T00:48:01.081967",
-    "operationAmount": {
-      "amount": "6357.56",
-      "currency": {
-        "name": "USD",
-        "code": "USD"
-      }
-    },
-    "description": "Перевод организации",
-    "from": "Visa Gold 3654412434951162",
-    "to": "Счет 59986621134048778289"
-  }
+        "id": 736942989,
+        "state": "EXECUTED",
+        "date": "2019-09-06T00:48:01.081967",
+        "operationAmount": {
+            "amount": "6357.56",
+            "currency": {
+                "name": "USD",
+                "code": "USD"
+            }
+        },
+        "description": "Перевод организации",
+        "from": "Visa Gold 3654412434951162",
+        "to": "Счет 59986621134048778289"
+    }
